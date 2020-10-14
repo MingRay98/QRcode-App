@@ -6,6 +6,7 @@ export const header = {
   `,
   button: css`
     width: fit-content;
+    min-width: 100px; 
     margin: 2% 2% 2% auto;
     text-align: center;
     padding: 1%;
@@ -14,7 +15,7 @@ export const header = {
     box-shadow: 0px 2px 6px 2px #0a45a5;
     cursor: pointer;
     @media (max-width: 350px) {
-      font-size: 12px;
+      font-size: 11px;
     }
     &:hover {
       background-color: blueviolet;
