@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e34414e97adbe80effef29094347d72",
+    "revision": "2b32919a31dbbc48696c0cf83e763bb1",
     "url": "/QRcode-App/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/QRcode-App/static/js/2.14f5ed5f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f601b5d9d349d3b37948",
-    "url": "/QRcode-App/static/js/main.96f2ab5b.chunk.js"
+    "revision": "e1bfa6a9aeb52b9f914b",
+    "url": "/QRcode-App/static/js/main.7764eb44.chunk.js"
   },
   {
     "revision": "9c9c775e8fa0fe16daad",
