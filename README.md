@@ -1,8 +1,8 @@
 ## About
 
-This a simple QRcode tool.
-Can help you scan the QRcode or create a new QRcode image.
-This project use the PWA. So you can install the app in PC or mobile.
+This a simple QRcode tool.  
+Can help you scan the QRcode or create a new QRcode image.  
+This project use the PWA. So you can install the app in PC or mobile.  
 
 ### Demo 
 
