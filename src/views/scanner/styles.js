@@ -11,7 +11,6 @@ export const scanner = {
     object-fit: cover;
     max-width: 500px;
     max-height: 400px;
-    transform: scaleX(-1);
   `,
   videoShadow: css`
     position: absolute;

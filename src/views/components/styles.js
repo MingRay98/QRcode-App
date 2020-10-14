@@ -40,3 +40,23 @@ export const header = {
     text-transform: capitalize;
   `
 };
+
+export const notification = {
+  container: css`
+    position: fixed;
+    text-align: center;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    z-index: 2;
+    background-color: rgba(50, 50, 50, 0.7);
+    word-break: none;
+    @media (max-width: 350px) {
+      font-size: 110%;
+    }
+  `
+};

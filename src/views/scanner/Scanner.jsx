@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import { BrowserQRCodeReader, NotFoundException } from "@zxing/library";
 import QRcodeResult from "./QRcodeResult";
 import { scanner as styles } from "./styles";
+import Notification from "../components/Notification";
 
 const codeReader = new BrowserQRCodeReader();
 
@@ -17,6 +18,7 @@ const constraints = {
 
 export default function Scanner() {
   const [resultText, setQRcodeResult] = useState("Wait for detecting...");
+  const [isNotification, setNotification] = useState(false);
   let video = useRef();
 
   const getCameraStream = (video) => {
@@ -29,6 +31,10 @@ export default function Scanner() {
           if (!!r) {
             console.log(r);
             setQRcodeResult(r.text);
+            setNotification(true);
+            setTimeout(() => {
+              setNotification(false);
+            }, 2000);
           }
           if (!e instanceof NotFoundException) console.log(e);
         });
@@ -41,6 +47,7 @@ export default function Scanner() {
 
   return (
     <div css={styles.container}>
+      {isNotification && <Notification />}
       <video
         css={css([
           styles.video,
