@@ -37,7 +37,7 @@ export const generator = {
     border-radius: 50px;
     width: 15vw;
     text-align: center;
-    min-width: 80px;
+    min-width: 90px;
     max-width: 200px;
     cursor: pointer;
     &:hover {

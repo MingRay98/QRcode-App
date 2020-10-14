@@ -5,9 +5,7 @@ export const header = {
     width: 100%;
   `,
   button: css`
-    width: 20%;
-    min-width: 60px;
-    max-width: 200px;
+    width: fit-content;
     margin: 2% 2% 2% auto;
     text-align: center;
     padding: 1%;
