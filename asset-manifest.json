@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/QRcode-App/static/js/main.437edbeb.chunk.js",
-    "main.js.map": "/QRcode-App/static/js/main.437edbeb.chunk.js.map",
+    "main.js": "/QRcode-App/static/js/main.6d2bccb6.chunk.js",
+    "main.js.map": "/QRcode-App/static/js/main.6d2bccb6.chunk.js.map",
     "runtime-main.js": "/QRcode-App/static/js/runtime-main.ef51c166.js",
     "runtime-main.js.map": "/QRcode-App/static/js/runtime-main.ef51c166.js.map",
     "static/js/2.14f5ed5f.chunk.js": "/QRcode-App/static/js/2.14f5ed5f.chunk.js",
     "static/js/2.14f5ed5f.chunk.js.map": "/QRcode-App/static/js/2.14f5ed5f.chunk.js.map",
     "index.html": "/QRcode-App/index.html",
-    "precache-manifest.40efff4dcbf13f92fdd68a46eb287efb.js": "/QRcode-App/precache-manifest.40efff4dcbf13f92fdd68a46eb287efb.js",
+    "precache-manifest.8c9eafc0fd73a8de11f67dcc5cc88be9.js": "/QRcode-App/precache-manifest.8c9eafc0fd73a8de11f67dcc5cc88be9.js",
     "service-worker.js": "/QRcode-App/service-worker.js",
     "static/js/2.14f5ed5f.chunk.js.LICENSE.txt": "/QRcode-App/static/js/2.14f5ed5f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ef51c166.js",
     "static/js/2.14f5ed5f.chunk.js",
-    "static/js/main.437edbeb.chunk.js"
+    "static/js/main.6d2bccb6.chunk.js"
   ]
 }
