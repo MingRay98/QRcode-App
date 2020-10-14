@@ -26,6 +26,7 @@ export const qrcodeResult = {
     width: 100%;
     text-align: center;
     padding: 5% 0;
+    z-index: 999; 
   `,
   link: css`
     &:visited {

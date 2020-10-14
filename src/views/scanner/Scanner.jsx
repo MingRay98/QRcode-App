@@ -16,6 +16,8 @@ const constraints = {
   }
 };
 
+const isMobileDevice = () => (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
 export default function Scanner() {
   const [resultText, setQRcodeResult] = useState("Wait for detecting...");
   const [isNotification, setNotification] = useState(false);
@@ -31,15 +33,19 @@ export default function Scanner() {
           if (!!r) {
             console.log(r);
             setQRcodeResult(r.text);
-            setNotification(true);
-            setTimeout(() => {
-              setNotification(false);
-            }, 2000);
+            showNotification();
           }
           if (!e instanceof NotFoundException) console.log(e);
         });
       });
   };
+
+  const showNotification = () => {
+    setNotification(true);
+    setTimeout(() => {
+      setNotification(false);
+    }, 2000);
+  }
 
   useEffect(() => {
     getCameraStream(video.current);
@@ -50,7 +56,7 @@ export default function Scanner() {
       {isNotification && <Notification />}
       <video
         css={css([
-          styles.video,
+          styles.video, { transform: isMobileDevice() ? ' scaleX(1)' : 'scaleX(-1)'},
           { width: window.innerWidth, height: window.innerWidth }
         ])}
         autoPlay={true}
