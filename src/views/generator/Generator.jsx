@@ -21,7 +21,17 @@ export default function Generator() {
 
   const svgToPNG = (svgElement) => {
     let svgData = new XMLSerializer().serializeToString(svgElement);
-    setImgURL("data:image/svg+xml;base64," + btoa(svgData));
+    let canvas = document.createElement( "canvas" );
+    let ctx = canvas.getContext( "2d" );
+    let img = new Image();
+
+    img.setAttribute( "src", "data:image/svg+xml;base64," + btoa( svgData ) );
+    img.onload = function() {
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage( img, 0, 0 );
+      setImgURL(canvas.toDataURL( "image/png" ));
+    }
   };
 
   const clear = () => {
